@@ -31,7 +31,7 @@ body{
     font-family: 'Amatic SC', cursive;
     font-family: 'Pixelify Sans', cursive;
     font-size: 7em;
-    color: red;
+    color: rgb(8, 5, 32);
 }
 
 
@@ -85,3 +85,6 @@ body{
   font-weight: bold;
 }
 
+#txt {
+  font-size: larger;
+}
