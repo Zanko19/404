@@ -14,7 +14,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url(./img/681b00d06b2e20e4fe7c5dd5d2fcc63d-removebg-preview.png);
+    background-image: url(./img/681b00d06b2e20e4fe7c5dd5d2fcc63d-removebg-preview.png), url(./img/681b00d06b2e20e4fe7c5dd5d2fcc63d-removebg-preview.png);
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
@@ -87,4 +87,13 @@ body{
 
 #txt {
   font-size: larger;
+}
+
+.container {
+  position: relative; /* Nécessaire pour positionner les pseudo-éléments */
+  width: 100%;
+  height: 100vh; 
+  background-size: cover, cover; /* Ajustez la taille des images à la fenêtre */
+  background-position: center, bottom; /* Positionnez les images comme vous le souhaitez */
+  background-repeat: no-repeat, no-repeat; /* Empêchez la répétition des images */
 }
