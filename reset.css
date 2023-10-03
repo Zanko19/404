@@ -1,0 +1,26 @@
+/* Pour les écrans mobiles */
+@media screen and (max-width: 767px) {
+  .container {
+    width: 90%; /* Ajustez la largeur de la container selon vos besoins */
+    padding: 20px; /* Ajoutez de la marge intérieure pour une meilleure lisibilité */
+  }
+
+  .container h1 {
+    font-size: 100px; /* Réduisez la taille de la police pour les petits écrans */
+  }
+}
+
+/* Pour les tablettes */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 70%; /* Ajustez la largeur de la container selon vos besoins */
+  }
+
+  .container h1 {
+    font-size: 140px; /* Ajustez la taille de la police pour les tablettes */
+  }
+}
+
+/* Aucune media query nécessaire pour les PC, conservez le style par défaut */
+
+/* Vous pouvez également ajouter d'autres media queries au besoin pour des résolutions spécifiques */

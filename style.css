@@ -1,99 +1,70 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
-
-body,html{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
-
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-image: url(./img/681b00d06b2e20e4fe7c5dd5d2fcc63d-removebg-preview.png), url(./img/681b00d06b2e20e4fe7c5dd5d2fcc63d-removebg-preview.png);
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-    background-size: contain;
-    background-position: center;
-    font-size: larger;
+  margin; 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(125deg,#ffc857,#119DA4);
 
 }
 
-#error{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Amatic SC', cursive;
-    font-family: 'Pixelify Sans', cursive;
-    font-size: 7em;
-    color: rgb(8, 5, 32);
-}
-
-
-@media (max-width: 768px) {
-    #error {
-        font-size: 3em; 
-    }
-}
-@media (min-width: 768px) {
-  
-}
-
-@keyframes fadeIn {
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
-  }
-}
-
-#tel{
-    animation: fadeIn 1.5s ease-in-out;
-    background-color: transparent;
-    height: 70px;
-    width: 70px;
-}
-
-
-#img-container:hover {
-  animation: scaleup 5s;
-}
-
-@keyframes scaleup {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.5);
-  }
-}
-
-
-
-#C137{
-    color: rgb(37, 11, 227);
-    font-weight: bold;
-}
-#portal {
-  color: white;
-  font-weight: bold;
-}
-
-#txt {
-  font-size: larger;
-}
-
-.container {
-  position: relative; /* Nécessaire pour positionner les pseudo-éléments */
+.container{
   width: 100%;
-  height: 100vh; 
-  background-size: cover, cover; /* Ajustez la taille des images à la fenêtre */
-  background-position: center, bottom; /* Positionnez les images comme vous le souhaitez */
-  background-repeat: no-repeat, no-repeat; /* Empêchez la répétition des images */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #343434;
 }
+
+.container h1{
+  font-size: 180px;
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 20px;
+  background: url(/404/img/nature-plyazh-pesok-palmi-tropiki-136169.png) center no-repeat;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.container a{
+  text-decoration: none;
+  background: #8DDFCB;
+  color: #fff;
+  padding: 12px 24px;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 14px;
+  text-decoration:underline;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.container a:hover{
+  background: #A6F6FF;
+}
+/* Pour les écrans mobiles */
+@media screen and (max-width: 767px) {
+  .container {
+    width: 90%; /* Ajustez la largeur de la container selon vos besoins */
+    padding: 20px; /* Ajoutez de la marge intérieure pour une meilleure lisibilité */
+  }
+
+  .container h1 {
+    font-size: 100px; /* Réduisez la taille de la police pour les petits écrans */
+  }
+}
+
+/* Pour les tablettes */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 70%; /* Ajustez la largeur de la container selon vos besoins */
+  }
+
+  .container h1 {
+    font-size: 140px; /* Ajustez la taille de la police pour les tablettes */
+  }
+}
+
+/* Aucune media query nécessaire pour les PC, conservez le style par défaut */
+
+/* Vous pouvez également ajouter d'autres media queries au besoin pour des résolutions spécifiques */
