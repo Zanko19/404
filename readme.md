@@ -15,7 +15,7 @@ Ce référentiel a été créé dans le cadre d'un défi d'apprentissage où l'o
 ## Visualisation :computer:
 
 Vous pouvez visualiser la page d'erreur 404 en suivant ce lien : [Page d'Erreur 404](https://zanko19.github.io/404/) :eyes:
-![Screen](./img/404_VF.jpg)
+![Screen](/404/img/404_VF.png)
 
 
 ## Comment déployer cette page :rocket:
